@@ -1,6 +1,6 @@
 import Spinner from "react-bootstrap/Spinner";
 import "./spinner.css";
-function SpinnerLoading({ variant }) {
+export default function SpinnerLoading({ variant }) {
   return (
     <div className="parent-spinner">
       <Spinner className="spinner" animation="border" variant={variant} />
@@ -8,4 +8,3 @@ function SpinnerLoading({ variant }) {
   );
 }
 
-export default SpinnerLoading;

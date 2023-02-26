@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import FilterCards from "./components/FilterCards";
-import "./App.css";
+import "./index.css";
 import CardList from "./components/Cards";
 import { useEffect, useState } from "react";
 import useFetch from "./components/fetchData";

@@ -19,22 +19,18 @@ function CountryDetail() {
         .then((data) => setData(data))
         .catch((err) => console.log(err));
     }
-  }, []);
+  });
   const arrOfBorders = data.map((item) => item.name.common);
 
-  // for getting nativeName
   const names = [];
   for (const name in state.name) {
     names.push(state.name[name]);
   }
   const nativeName = names[2];
   const obj = Object.values(nativeName);
-  //////////
 
-  // for getting currencies
   const correncies = Object.values(state.currencies);
 
-  // for getting languages
   const languages = Object.values(state.languages);
 
   return (

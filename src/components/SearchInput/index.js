@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
-import "./search-bar.css";
+import "./search-Input.css";
 
 export default function SearchInput({ handleChange, inputValue }) {
   const handleSubmit = (e) => {

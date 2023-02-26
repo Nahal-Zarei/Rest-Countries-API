@@ -1,7 +1,7 @@
 import { Card } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import "./show-card.css";
-function ShowCards({ data }) {
+export default function ShowCards({ data }) {
   return (
     <Card className="card " style={{ width: "18rem" }}>
       <NavLink to={`/country/${data.name.common}`} state={data}>
@@ -26,5 +26,3 @@ function ShowCards({ data }) {
     </Card>
   );
 }
-
-export default ShowCards;
